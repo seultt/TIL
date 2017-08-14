@@ -1,0 +1,118 @@
+* {
+  margin: 0; padding:0; box-sizing: border-box;
+}
+
+body { 
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  background-color: #f0f3f4;
+}
+ul, li { list-style: none; }
+a { text-decoration: none; }
+
+.row:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*.wrapper {
+  margin: 60px 0 0;
+}*/
+/*header와 article가 겹친 부분을 margin을 통해 아래로 밀어줌-margin을 주어서 content의 길이 값이 자신의 위로 길어져서 header와 article의 겹침을 해결할 수 있다.*/
+
+/*header 영역*/
+
+header { 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  line-height: 60px;
+  z-index: 2000;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+header .logo {
+  float: left;
+
+}
+header nav {
+  float: right;
+}
+.navigation li  {
+  display: inline-block;
+  padding: 0 10px;
+}
+.navigation li a {
+  color: gray;
+}
+.navigation li a:hover {
+  color: #333;
+}
+
+
+/*section 영역*/
+/*-aside 영역*/
+aside {
+  position: fixed;
+  width: 20%;
+  top: 60px;
+  bottom: 0;
+  background-color: #333;
+}
+aside h2 {
+  padding: 20px 10px;
+  color: white;
+}
+
+/*.s_navi li {
+  
+}*/
+.s_navi li.active {
+  background-color: darkgreen;
+}
+
+.s_navi li a{
+  display: inline-block;
+  width: 100%;
+  color: white;
+  padding: 20px 10px;
+}
+.s_navi li a:hover {
+  background-color: gray;
+}
+
+
+/*-article*/
+article {
+  margin-top:60px;
+  /*header와 article가 겹친 부분을 margin을 통해 아래로 밀어줌-margin을 주어서 content의 길이 값이 자신의 위로 길어져서 header와 article의 겹침을 해결할 수 있다.*/
+  width: 80%;
+  float: right;
+  
+  /* 실수 한 부분
+  position: relative;
+  top: 60px; position으로 60px 밀어 주어서 컨텐츠 길이는 그대로이고 위치값만 아래로 60px 이동하므로 footer 부분이 겹치는 문제가 발생한다.*/
+}
+
+article ul li {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+article ul li h2 {
+  margin-bottom: 10px;
+}
+
+/*footer 영역*/
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: gray;
+  line-height: 60px;
+  /*border: 1px solid gray;*/
+  /*z-index: 2000;*/
+}

@@ -1,0 +1,218 @@
+* { margin:0; padding: 0; box-sizing: border-box;}
+
+body, input { color: #333; font-family: 'Poppins', sans-serif; font-size: 14px; }
+li { list-style: none; }
+a { text-decoration: none; color: inherit;}
+h2 { font-size: 52px; font-weight: 600; line-height: 58px; margin-bottom: 20px; }
+h3 { font-size: 44px; font-weight: 600; line-height: 58px; margin-bottom: 20px; }
+h4 { font-size: 14px; font-weight: 600; line-height: 24px; margin-bottom: 20px; margin-top: 20px; }
+p {  color: #9a9a9a; font-size: 16px; line-height: 24px;}
+section { text-align: center; border-bottom: 1px solid #ebebeb; }
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 71px;
+  height: 38px;
+
+}
+.logo {
+  float: left;
+  line-height: 38px;
+  margin-right: 19px;
+}
+
+.logo img{
+  vertical-align: 3px;
+}
+/*--nav--*/
+nav{
+  line-height: 38px;
+  float: left;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  padding: 10px;
+}
+
+/*--button--*/
+.log {
+  float: right;
+}
+.log input {
+  padding: 5px 35px;
+  border-radius: 4px;
+}
+
+.log .logIn {
+  background-color: white;
+  border: none;
+}
+.log .signUp {
+  font-weight: 500;
+  color: #03a67b;
+  background-color: white;
+  border: 1px solid #03a67b;
+}
+
+/*--blokk--*/
+.blokk {
+  position: relative;
+  height: 692px;
+  text-align: left;
+}
+.blokk .title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 530px;
+}
+.blokk .title p {
+  margin-bottom: 32px;
+}
+/*--form--*/
+.blokk .title form input[type] {
+  border: none;
+  font-size: 14px; 
+}
+.blokk .title form input[type="text"] {
+  width: 270px;
+  height: 50px;
+  padding-left: 20px;
+  line-height: 50px;
+  background-color: #f5f5f5;
+  color: #9c9c9c;
+  border-radius: 4px 0 0 4px;
+}
+.blokk .title form input[type="button"] {
+  margin-left: -5px;
+  width: 200px;
+  height: 50px;
+  background-color: #03a67b;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 6px;
+  border-radius: 0 4px 4px 0;
+}
+/*--image--*/
+.blokk .img_iphon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 145px;
+}
+
+/*--Features--*/
+.features {
+  height: 564px;
+  margin-top: 105px;
+  padding: 0 27px;
+}
+.features>p {
+  width: 708px;
+  display: inline-block;
+  margin-bottom: 59px;
+}
+
+.features .list .one {
+  width: 320px;
+}
+.features .list .fir, .sec {
+  float: left;
+  margin-right: 62px;
+}
+.features .list .thir {
+  float: right;
+}
+
+.features .list .one h4 {
+  letter-spacing: 4px;
+}
+
+/*--celients--*/
+.one span {
+  display: block;
+  color: #d8d8d8;
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+/*--wireframe--*/
+.wire {
+  height: 720px;
+  margin-top: 113px;
+}
+.wire img {
+  margin-top: 20px;
+}
+
+/*--try--*/
+.try {
+  height: 402px;
+  margin-top: 105px; 
+}
+
+.try p {
+  display: inline-block;
+  width: 560px;
+  height: 90px;
+}
+
+.try input {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.try input.green {
+  background-color: #03a67b;
+  color: white;
+  border: none;
+}
+.try input.line {
+  background: white;
+  color: #03a67b;
+  border: 2px solid #03a67b;
+}
+
+
+footer {
+  height: 150px;
+  line-height: 150px;
+}
+footer small {
+  float: left;
+}
+.company {
+  float: left;
+  margin-left: 268px; 
+}
+
+.sns {
+  float: right;
+}
+
+.company li, .sns li {
+    display: inline-block;
+}
+
+.company li a {
+  padding: 10px 7px;
+}
+
+

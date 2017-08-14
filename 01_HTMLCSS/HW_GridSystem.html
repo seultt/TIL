@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>Gride System</title>
+  <style>
+    li{list-style: none;}
+    .row {background-color: gray;}
+    .container { background-color: whitesmoke; }
+      [class|="col"]{
+      /*height: 50px;*/
+      /*padding: 15px;*/
+      min-height: 1px;/*text가 없을 때 대비하여 최소값을 넣어줌*/ 
+      /*float: left; */
+      border: 1px solid silver;
+      background-color: gray;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+    }
+    ul{margin: 0; padding: 0;}
+    ul li {
+      display: inline-block;
+      padding: 10px;
+    }
+    .borderBottom, .borderBottom>div {
+      border-bottom: none;
+    }
+
+    @media (min-width: 1200px) {
+    ul li {
+    display: block;
+  }
+}
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gride System</h1>
+    <div class="row">
+      <div class="col-xs-12">Navigation</div>
+    </div>
+   <div class="row">
+     <div class="col-xs-12 col-lg-2">
+       <ul>
+         <li>HTML</li>
+         <li>CSS</li>
+       </ul>
+     </div>
+     <div class="col-xs-12 col-lg-8">
+       <h2>Main Section</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto tempore quisquam totam beatae aut provident voluptatem, vitae reiciendis fugiat dolorem, laborum quidem necessitatibus voluptate corporis labore accusamus error quibusdam aliquid</p>
+       <div class="row">
+         <div class="col-md-4 col-lg-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto tempore quisquam totam beatae aut provident voluptatem, vitae reiciendis fugiat dolorem, laborum quidem necessitatibus voluptate corporis labore accusamus error quibusdam aliquid</div>
+         <div class="col-md-4 col-lg-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto tempore quisquam totam beatae aut provident voluptatem, vitae reiciendis fugiat dolorem, laborum quidem necessitatibus voluptate corporis labore accusamus error quibusdam aliquid</div>
+         <div class="col-md-4 col-lg-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto tempore quisquam totam beatae aut provident voluptatem, vitae reiciendis fugiat dolorem, laborum quidem necessitatibus voluptate corporis labore accusamus error quibusdam aliquid</div>
+       </div>
+       <div class="row borderBottom">
+         <div class="col-xs-6 col-lg-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto tempore quisquam totam beatae aut provident voluptatem, vitae reiciendis fugiat dolorem, laborum quidem necessitatibus voluptate corporis labore accusamus error quibusdam aliquid?</div>
+         <div class="col-xs-6 col-lg-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto tempore quisquam totam beatae aut provident voluptatem, vitae reiciendis fugiat dolorem, laborum quidem necessitatibus voluptate corporis labore accusamus error quibusdam aliquid?</div>
+         <div class="col-xs-6 col-lg-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto tempore quisquam totam beatae aut provident voluptatem, vitae reiciendis fugiat dolorem, laborum quidem necessitatibus voluptate corporis labore accusamus error quibusdam aliquid?</div>
+         <div class="col-xs-6 col-lg-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto tempore quisquam totam beatae aut provident voluptatem, vitae reiciendis fugiat dolorem, laborum quidem necessitatibus voluptate corporis labore accusamus error quibusdam aliquid?</div>
+       </div>
+     </div>
+     <div class="col-xs-12 col-lg-2">
+       <ul>
+         <li>Comment</li>
+         <li>News</li>
+       </ul>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-xs-12">Footer</div>
+   </div>
+  </div>
+
+</body>
+</html>

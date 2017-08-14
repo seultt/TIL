@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; }
+    li { list-style: none; }
+    a { text-decoration: none; }
+    body { 
+      font-style: san-serif;
+      color:#58666e;
+      background-color: #f0f3f4;
+    }
+
+    h1 {font-size: 1.8em;}
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 10px 5px;
+    }
+
+    #wrap {
+      /*margin-top = header height*/
+      /*
+      for full width
+      top = header height
+      bottom = footer height
+      */
+      width: 100%;
+      margin: 60px 0 60px;
+    }
+    /*header*/
+    header {
+      /*for sticky header*/
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      z-index: 2000;
+      background-color: #fff;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0,0,0, 0.05);
+    }
+    header .logo {
+      display: inline-block;
+      height: 36px;
+      margin: 12px 0 12px 25px;
+    }
+    .logo>img { height: 36px; }
+    nav {
+      float: right;
+    }
+    .nav-items {
+      margin-right: 20px;
+    }
+    .nav-items>li {
+      display: inline-block;
+      
+    }
+    .nav-items>li>a {
+      line-height: 60px;
+      padding: 20px 20px; 
+      color: rgba(0,0,0,0.4);
+    }
+    .nav-items>li>a:hover {
+      color: rgba(0,0,0,0.8);
+    }
+
+    /*content-aside*/
+    #content-wrap {
+      overflow: hidden;
+    }
+    aside {
+      position: fixed;
+      /*float: left;*/
+      top: 60px;
+      bottom: 0;
+      width: 200px;
+      padding-top: 25px;
+      background-color: #333;
+    }
+    aside>h1 {
+      padding: 20px 0 20px 20px;
+      color: #fff;
+    }
+    aside>ul {
+      width: 200px;
+    }
+    aside>ul>li>a {
+      display: block;
+      color: #fff;
+      padding: 10px 0 10px 20px;
+    }
+    aside>ul>li>a.active {
+      background-color:#4caf50;
+    }
+    aside>ul>li>a:hover:not(.active) {
+      background-color: #555;
+    }
+
+
+    /*content-section*/
+    section {
+      float: right;
+      /*aside width*/
+      margin-left: 200px;
+      /*width: 80%;*/
+    }
+    article {
+      margin: 10px;
+      padding: 25px;
+      background-color: white;
+    }
+
+    footer {
+      position: absolute;
+      width: 100%;
+      height: 60px;
+      padding: 0 25px;
+      line-height: 60px;
+      border-top: 1px solid #dee5e7;
+      color: #8a8c8f; 
+      background-color: #f2f2f2;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <a class="logo" href="#index2">
+        <img src="http://poiemaweb.com/img/logo.png" alt="logo">
+      </a>
+      <nav>
+        <ul class="nav-items">
+          <li><a href="#index">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="content-wrap">
+      <aside>
+        <h1>Aside</h1>
+        <ul>
+          <li><a href="#" class="active">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+          <li><a href="#">Newyork</a></li>
+        </ul>
+      </aside>
+
+      <section>
+        <article id="London">
+          <h1>London</h1>
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+          <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+        </article>
+        <article id="paris">
+          <h1>London</h1>
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+          <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+        </article>
+        <article id="Tokyo">
+          <h1>London</h1>
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+          <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+        </article>
+        <article id="newyork">
+          <h1>London</h1>
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+          <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+        </article>
+      </section>
+    </div>
+    <footer>© Copyright 2016 ungmo2</footer>
+  </div>
+</body>
+</html>

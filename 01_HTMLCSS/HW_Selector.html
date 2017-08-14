@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{ margin: 0; }
+      .com > div{
+        height: 200px;
+        color: #fff;
+        text-align: center;
+        line-height: 200px;
+        float: left;
+      }
+
+      .two>div{
+        width:49%;
+        margin-bottom:2%; 
+        background-color:green;
+      }
+
+      .two>div:not(:nth-of-type(2n-1)) {
+        margin-left: 2%;
+      }
+
+      .three>div{
+        width:32%;
+        margin-bottom:2%; 
+        background-color:pink;
+      }
+
+      .three>div:not(:nth-of-type(3n-2)) {
+        margin-left: 2%;
+      } 
+      
+      .four>div{
+        width:23.5%;
+        margin-bottom:2%;
+        background-color: red;
+      }
+
+      .four>div:not(:nth-of-type(4n-3)) {
+        margin-left: 2%;
+      }
+
+      .five>div{
+        width:18.4%;
+        margin-bottom:2%;
+        background-color: blue;
+      }
+
+      .five>div:not(:nth-of-type(5n-4)) {
+        margin-left: 2%;
+      }
+    </style>
+
+  </head>
+  <body>
+
+  <div class="two com">  
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+    <div>2</div>
+  </div>
+  <hr>
+
+  <div class="three com">  
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+  </div>
+  <hr>
+
+  <div class="four com">  
+    <div>4</div>
+    <div>4</div>
+    <div>4</div>
+    <div>4</div>
+    <div>4</div>
+    <div>4</div>
+    <div>4</div>
+    <div>4</div> 
+    <!--개수가 딱 떨어지지 않으면 float에 의해 각 요소들이 붕뜨게 된다.-->
+  </div>
+  <hr>
+
+  <div class="five com">  
+    <div>5</div>
+    <div>5</div>
+    <div>5</div>
+    <div>5</div>
+    <div>5</div>
+    <div>5</div> 
+    <div>5</div>
+    <div>5</div>
+    <div>5</div> 
+    <div>5</div>
+  </div>
+  <hr>
+  </body>
+</html> 

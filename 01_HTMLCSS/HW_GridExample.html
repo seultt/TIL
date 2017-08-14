@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid Example</title>
+  <style>
+    /*Start of Resets*/
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    li { list-style: none }
+
+    body{
+      /*상속/inherit되는 것들을 써준다.*/
+      font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+      font-size: 14px;
+      line-height:  /*1.422857143; 14px * 1.422857143 =20px*/
+      color: #333;
+      background-color: #fff;
+    }
+    /*Fixed-Width container*/
+    .container {
+      width: 900px;
+    }
+    .container, .container_full {
+      margin: 0 auto;
+      padding: 0 15px;
+      background-color: whitesmoke; 
+    }
+
+    .row {
+      background-color: gray;
+    }
+    .row::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    /*.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12*/
+    [class|="col"]{
+      /*height: 50px;*/
+      padding: 15px;
+      min-height: 1px;/*text가 없을 때 대비하여 최소값을 넣어줌*/ 
+      float: left; 
+      border: 1px solid silver;
+      background-color: gray;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+    }
+    .col-1 { width:8.33333333%; }
+    .col-2 { width:16.6666667%; }
+    .col-3 { width:25%; }
+    .col-4 { width: 33.33333333%; }
+    .col-5 { width: 41.66666667%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33333333%; }
+    .col-8 { width: 66.66666666%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33333333%; }
+    .col-11 { width: 91.66666666%; }
+    .col-12 { width: 100%; }
+
+    100%/6
+    
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">col-6</div>
+      <div class="col-2">col-6</div>
+      <div class="col-2">col-6</div>
+      <div class="col-2">col-6</div>
+      <div class="col-2">col-6</div>
+      <div class="col-2">col-6</div>
+    </div>
+    <div class="row">
+      <div class="col-3">col-3</div>
+      <div class="col-3">col-3</div>
+      <div class="col-3">col-3</div>
+      <div class="col-3">col-3</div>
+    </div>
+    <div class="row">
+      <div class="col-4">col-4</div>
+      <div class="col-4">col-4</div>
+      <div class="col-4">col-4</div>
+    </div>
+    <div class="row">
+      <div class="col-5">col-5</div>
+      <div class="col-5">col-2</div>
+      <div class="col-2">col-2</div>
+    </div>
+    <div class="row">
+      <div class="col-6">col-6</div>
+      <div class="col-6">col-6</div>
+    </div>
+    <div class="row">
+      <div class="col-7">col-7</div>
+      <div class="col-5">col-5</div>
+    </div>
+    <div class="row">
+      <div class="col-8">col-8</div>
+      <div class="col-4">col-4</div>
+    </div>
+    <div class="row">
+      <div class="col-9">col-9</div>
+      <div class="col-3">col-3</div>
+    </div>
+    <div class="row">
+      <div class="col-10">col-10</div>
+      <div class="col-2">col-2</div>
+    </div>
+    <div class="row">
+      <div class="col-11">col-11</div>
+      <div class="col-1">col-1</div>
+    </div>
+    <div class="row">
+      <div class="col-12">col-12</div>
+    </div>
+  </div>
+
+  <h2>Layout Example</h2>
+  <div class="wrapper">
+
+    <div class="row">
+      <div class="col-12">
+        navigation
+      </div>
+    </div>
+
+    <div class="row">
+      <!--aside-->
+      <div class="col-3">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <!--center-->
+      <div class="col-6">
+        <!--title-->
+        <h3>Main Section</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laborum iusto eius explicabo. Laudantium tempore inventore soluta, optio cumque. Sit autem adipisci, dignissimos aliquid explicabo tenetur facilis quibusdam odit consequuntur!</p>
+        <!--in contents-->
+        <div class="row">
+          <div class="col-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quia enim dolorem eveniet voluptas earum, amet nam vitae iste repellat corporis incidunt ipsam esse voluptatum aut illum excepturi ab, ea.</p>
+          </div>
+          <div class="col-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quia enim dolorem eveniet voluptas earum, amet nam vitae iste repellat corporis incidunt ipsam esse voluptatum aut illum excepturi ab, ea.</p>
+          </div>
+          <div class="col-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quia enim dolorem eveniet voluptas earum, amet nam vitae iste repellat corporis incidunt ipsam esse voluptatum aut illum excepturi ab, ea.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas libero facilis temporibus eveniet ducimus officiis tempore aliquam distinctio veritatis voluptatibus aut maiores quidem accusamus a quae, nesciunt eius quibusdam adipisci!</p>
+          </div>
+          <div class="col-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas libero facilis temporibus eveniet ducimus officiis tempore aliquam distinctio veritatis voluptatibus aut maiores quidem accusamus a quae, nesciunt eius quibusdam adipisci!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas libero facilis temporibus eveniet ducimus officiis tempore aliquam distinctio veritatis voluptatibus aut maiores quidem accusamus a quae, nesciunt eius quibusdam adipisci!</div>
+          <div class="col-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas libero facilis temporibus eveniet ducimus officiis tempore aliquam distinctio veritatis voluptatibus aut maiores quidem accusamus a quae, nesciunt eius quibusdam adipisci!</div>
+        </div>
+      </div>
+      <!--aside-->
+      <div class="col-3">
+        <ul>
+          <li>Comment</li>
+          <li>News</li>
+        </ul>
+      </div> 
+
+    </div>
+  </div>
+
+
+</body>
+</html>
