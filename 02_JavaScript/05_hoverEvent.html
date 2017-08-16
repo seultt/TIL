@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Hover Event</title>
+    <style>
+      #hover {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <div id="hover"></div>
+  <script>
+      // var mous = document.getElementById('hover');
+    // function over(e) {
+    //   console.log('this: ', this);
+    //     this.style.backgroundColor = '#A5D9F3';
+    // }
+    // document.querySelector('div').addEventListener('mouseover', over);
+
+    // function out(e) {
+    //   console.log('this: ', this);
+    //     this.style.backgroundColor = 'red';
+    // }
+    // document.querySelector('div').addEventListener('mouseout', out);
+    
+    var mous = document.getElementById('hover');
+    mous.addEventListener('mouseover', function(){
+      this.style.backgroundColor = '#A5D9F3';
+    });
+    mous.addEventListener('mouseout', function(){
+      this.style.backgroundColor = 'red';
+    });
+  </script>
+</html>

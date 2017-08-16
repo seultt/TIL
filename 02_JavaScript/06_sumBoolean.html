@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>User sum</title>
+  </head>
+  <body>
+    <input type="text" id="sum1" value="1">+<input type="text" id="sum2" value="2">=<input type="text" id="answer" value="3">
+    <button type="" id="btn">확인</button>
+
+    <script>
+      /*
+      // 해결 방안 1
+      (function(){
+        
+      var btnClick = document.getElementById('btn');
+      
+       function sum (a,b,c){         
+         if(a+b=== c){
+           alert(true);
+         } else {
+           alert(false);
+         }
+       }
+
+      btnClick.addEventListener('click', function(){
+        var sumOne = document.getElementById('sum1').value * 1;
+        var sumTwo = document.getElementById('sum2').value * 1;
+        var sumAnswer = document.getElementById('answer').value * 1;
+        sum(sumOne,sumTwo,sumAnswer);
+      });
+      })();
+      */
+
+      
+      // 해결 방안 2
+      
+        
+      var sumOne = document.getElementById('sum1');
+      var sumTwo = document.getElementById('sum2');
+      var sumAnswer = document.getElementById('answer');
+      var btnClick = document.getElementById('btn');
+      
+       function sum (a,b,c){
+       alert ((a.value*1) + (b.value*1) === (c.value*1) ? '정답' : '오답');
+       }
+
+      btnClick.addEventListener('click', function(){
+        sum(sumOne,sumTwo,sumAnswer);
+      });
+      
+
+
+      /*
+      // 해결 방안 3
+      //즉시 실행 함수로 전역을 더럽히지 않도록 한다.
+      (function(){    
+        var btnClick = document.getElementById('btn');
+        
+        btnClick.addEventListener('click', function(){
+        
+          var sumOne = document.getElementById('sum1').value * 1; // 전역에다가 놓으면 .value가 기본input의 value값으로 셋팅이 된다.
+          var sumTwo = document.getElementById('sum2').value * 1;
+          var sumAnswer = document.getElementById('answer').value * 1;
+
+          console.log(sumOne.value);
+          console.log(sumTwo.value);
+          console.log(sumOne.value+sumTwo.value);  // 사용자가 입력된 값이 string이여서 string+string  1+2를 하면 결과값이 12가 나온다.
+          console.log(sumOne.value*1+sumTwo.value*1); // 입력된 값의 타입을 숫자로 바꿔면 number+number로 원하는 결과 값이 나온다.
+          console.log(sumAnswer.value);
+
+          if(sumOne+sumTwo===sumAnswer) {
+            alert(true);
+          } else {
+            alert(false);
+          }
+        });
+      })();
+      */
+      // 해결 방안 3
+
+    </script>
+
+  </body>
+</html>
