@@ -1,10 +1,17 @@
 # TIL
-Today I Learned
+Today I Learned & Must Study Check List
 
 ___
-## 1. HTML / CSS
+## Must Study Check List
 
-## 2. JavaScript
+- [JS] class 문법의 constructor와 this
+
+___
+## TIL
+
+### 1. HTML / CSS
+
+### 2. JavaScript
 - Quiz | 반복문 예제 <17. 08. 05>
 - Quiz | 문자열 내 p와 y의 개수 구하기 <17. 08. 13>
   advice | 빈 인자 방어코드 & 정규표현식을 이용한 식
@@ -22,6 +29,6 @@ ___
 - Quiz | 이상한 문자만들기 toWeirdCase <17. 08.20>
 - Quiz | 수박수박수박수박수박수? waterMelon <17. 08.20>
 
-## 3. NodeJS
+### 3. NodeJS
 - Day1 | REST API 실습/ Node.js / Asynchronous JavaScript <17. 08.28>
 - Day2 | HTTP / Express / Template Language <17. 08.29>
